@@ -56,8 +56,8 @@ After the game, select **Share Results** to copy the emoji grid without revealin
 Because the project uses JavaScript modules, run it through a local development server rather than opening `index.html` directly.
 
 ```bash
-git clone https://github.com/winstone01/REPOSITORY-NAME.git
-cd REPOSITORY-NAME
+git clone https://github.com/winstone01/wordle-Game.git
+cd wordle-Game
 ```
 
 You can then use the VS Code **Live Server** extension, or run:
