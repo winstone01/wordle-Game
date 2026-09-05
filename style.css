@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Asap+Sharp:ital,wdth,wght@0,94.8,100..900;1,94.8,100..900&display=swap");
+
+* {
+	font-family: "Asap Sharp", sans-serif;
+}
+
+body {
+	background-color: #0e0f10;
+}
+
+button {
+	outline: none;
+	background-color: transparent;
+	border: 2px solid white;
+	border-radius: 5px;
+	color: #fff;
+	padding: 6px;
+	font-size: 1.45em;
+	align-items: center;
+	margin-right: 4px;
+	margin-left: 4px;
+	cursor: pointer;
+}
+
+header {
+	display: flex;
+	justify-content: space-around;
+	border-bottom: 2px solid gray;
+	margin-bottom: 120px;
+}
+
+main {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+}
+
+#end-game {
+	opacity: 0;
+	margin-top: 16px;
+	display: flex;
+	flex-direction: row;
+}
+
+#game-board {
+	width: 350px;
+	font-weight: 600;
+}
+
+#header-title {
+	color: lightgray;
+	font-size: 2.25em;
+	margin-top: 8px;
+	margin-bottom: 8px;
+}
+
+#message {
+	opacity: 0;
+	border: 1px solid gray;
+	box-shadow: 3px 3px 10px lightgray;
+	color: lightgray;
+	padding: 8px;
+	margin-top: 16px;
+	font-size: 1.5em;
+}
+
+#share-results {
+	display: flex;
+	flex-direction: row;
+}
+
+#shared {
+	display: none;
+	margin-left: 4px;
+}
+
+.animate-invalid {
+	animation: shake-horizontal 350ms;
+	animation-timing-function: ease-in-out;
+}
+
+.board-button {
+	height: 60px;
+	width: 60px;
+	margin: 3px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 1.875em;
+	color: #fff;
+}
+
+.board-row {
+	display: flex;
+	flex-direction: row;
+}
+
+.correct {
+    background-color: #42713e;
+    border: 2px solid transparent;
+}
+
+.empty {
+    border: 2px solid #797063;
+
+}
+
+.partially-correct {
+    background-color: #917f2f;
+    border: 2px solid transparent;
+}
+
+.incorrect {
+	background-color: #333638;
+	border: 2px solid transparent;
+}
+
+@keyframes shake-horizontal {
+    0%, 100%{
+        transform: translateX(0);
+    }
+    15% {
+        transform: translateX(-5px);
+    }
+    30% {
+        transform: translateX(5px);
+    }
+    45%{
+        transform: translateX(10px);
+    }
+    60% {
+        transform: translateX(10px);
+    }
+    75% {
+        transform: translateX(-5px)
+    }
+    90%{
+        transform: translateX(-5px)
+    }
+}
