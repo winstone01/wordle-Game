@@ -11,8 +11,6 @@ let currentGuess = "";
 let correctWord = words[Math.floor(Math.random() * words.length)];
 let finalResults = [];
 
-console.log(correctWord);
-
 generateGameBoard();
 
 playAgainEl.addEventListener("click", () => {
